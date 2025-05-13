@@ -1,5 +1,6 @@
 import { appTools, defineConfig } from "@modern-js/app-tools";
 import { serverPlugin } from "@modern-js/plugin-server";
+import myPlugin from "./config/plugin/myPlugin";
 
 // https://modernjs.dev/en/configure/app/usage
 export default defineConfig({
@@ -11,5 +12,6 @@ export default defineConfig({
       bundler: "rspack", // Set to 'webpack' to enable webpack
     }),
     serverPlugin(),
+    myPlugin(),
   ],
 });
