@@ -1,6 +1,7 @@
 {
   "name": "myapp",
   "version": "0.1.0",
+  "type": "module",
   "scripts": {
     "reset": "npx rimraf node_modules ./**/node_modules",
     "dev": "modern dev",
@@ -10,7 +11,7 @@
     "serve": "modern serve",
     "new": "modern new",
     "lint": "biome check",
-    "prepare": "simple-git-hooks",
+    "prepare": "simple-git-hooks",z
     "upgrade": "modern upgrade"
   },
   "engines": {
@@ -25,14 +26,15 @@
     "pre-commit": "npx lint-staged"
   },
   "dependencies": {
-    "@modern-js/runtime": "2.67.3",
+    "@modern-js/runtime": "2.68.0",
+    "@modern-js/server-runtime": "2.68.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@modern-js/app-tools": "2.67.3",
-    "@modern-js/tsconfig": "2.67.3",
-    "@modern-js/plugin-server": "2.67.3",
+    "@modern-js/app-tools": "2.68.0",
+    "@modern-js/tsconfig": "2.68.0",
+    "@modern-js/plugin-server": "2.68.0",
     "@biomejs/biome": "1.9.4",
     "typescript": "~5.7.3",
     "@types/jest": "~29.2.4",
