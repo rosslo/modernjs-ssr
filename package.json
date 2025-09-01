@@ -11,7 +11,7 @@
     "serve": "modern serve",
     "new": "modern new",
     "lint": "biome check",
-    "prepare": "simple-git-hooks",z
+    "prepare": "simple-git-hooks",
     "upgrade": "modern upgrade"
   },
   "engines": {
